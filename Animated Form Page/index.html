@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   STYLESHEET     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+    <link rel="stylesheet" href="/Stylesheet/style.css">
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   IONICONS     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@    GSAP       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+</head>
+<body>
+    <div class="popup">
+            <div class="popup-btn" onclick="openPop()">
+               <b>Become a member</b>
+        </div>
+
+        <div class="popup-template">
+            <div class="popup-close" onclick="closePop()">
+                <ion-icon name="close-outline"></ion-icon>
+            </div>
+            <div class="popup-top">
+                <h1>Become a Member</h1>
+                <p>We are glad that you preferred to contact us. Plese fill up our form and our member will contact you back soon</p>
+            </div>
+            <div class="popup-form">
+                <div class="form-row">
+                    <div class="form-row1">
+                        <h1>First Name</h1>
+                        <input class="emptybox" type="text">
+                    </div>
+                    <div class="form-row1">
+                        <h1>Last Name</h1>
+                        <input class="emptybox" type="text">
+                    </div>
+                    <div class="form-row1">
+                        <h1>Email</h1>
+                        <input class="emptybox" type="email" required>
+                    </div>
+                
+                </div>
+                <div class="form-row">
+                    <div class="form-row1">
+                        <h1>Phone</h1>
+                        <input class="emptybox" type="text">
+                    </div>
+                    <div class="form-row1">
+                        <h1>City</h1>
+                        <input class="emptybox" type="text">
+                    </div>
+                    <div class="form-row1">
+                        <h1>Country</h1>
+                        <input class="emptybox" type="text">
+                    </div>
+                
+                </div>
+                <div class="form-row">
+                    <div class="form-row1 textareaofthird">
+                        <h1>Address</h1>
+                        <textarea class="emptybox" name="" id="" ></textarea>
+                    </div>
+                    <div class="form-row1" id="side-left">
+                        <h1>Messsage</h1>
+                        <textarea class="emptybox" name="" id="" ></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-row1"><button class="submit-popup">Submit</button></div>
+            </div>
+        </div>
+        <div class="cursor">
+            <div class="inner-cursor"></div>
+        </div>
+    </div>
+
+    <script src="./Javascript/script.js"></script>
+</body>
+</html>
